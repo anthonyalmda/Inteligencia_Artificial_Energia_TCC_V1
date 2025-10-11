@@ -1,0 +1,28 @@
+# Estrutura Modular de Pastas 
+
+/Inteligencia_Artificial_Energia_TCC
+├── /src
+│   ├── /data
+│   │   ├── /raw                 # Dados brutos (ex.: CSVs originais, APIs, sensores)
+│   │   ├── /processed           # Dados tratados, normalizados, prontos para modelagem
+│   │   └── /simulation          # Dados simulados (quando não houver dataset real)
+│   │
+│   ├── /models
+│   │   ├── /forecasting_consumption   # Modelos de previsão de consumo
+│   │   └── /forecasting_production    # Modelos de previsão de produção (solar, eólica, etc.)
+│   │
+│   ├── /logic
+│   │   └── /decision_engine     # Algoritmos de decisão com base nas previsões
+│   │
+│   └── /finance
+│       └── /profit_analysis     # Cálculo de lucro (bruto e líquido), ROI, payback
+│
+├── /notebooks
+│   ├── data_exploration.ipynb   # Exploração e visualização dos dados
+│   └── model_training.ipynb     # Experimentos de treino/teste dos modelos
+│
+├── /docs
+│   └── tcc_report.md            # Relatório/documentação técnica do projeto
+│
+├── requirements.txt             # Dependências do projeto (pandas, sklearn, tensorflow, etc.)
+└── README.md                    # Guia inicial: objetivos, instalação e execução
