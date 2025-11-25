@@ -517,3 +517,6 @@ cd results/tcc_coleta_completa/04_horizon_30
 
 *Documento gerado para apresentação do TCC - Sistema de Previsão de Energia com IA*
 
+
+
+
