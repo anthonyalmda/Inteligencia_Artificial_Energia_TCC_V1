@@ -1,0 +1,85 @@
+╔═══════════════════════════════════════════════════════════╗
+║         GUIA RÁPIDO DE TESTE - COPIE E COLE               ║
+╚═══════════════════════════════════════════════════════════╝
+
+📍 PASSO 1: Abra o terminal/PowerShell na pasta do projeto
+   cd "C:\Users\Anthony.almeida\TCC - anthony\Inteligencia_Artificial_Energia_TCC_V1"
+
+
+═══════════════════════════════════════════════════════════
+📋 TESTE 1: Pipeline Básico (Mais Simples)
+═══════════════════════════════════════════════════════════
+
+python run_pipeline.py --horizon 7 --no-gui
+
+O que esperar:
+  ✓ Pipeline executa
+  ✓ Arquivos gerados em results/
+  ✓ Mensagem "✅ Pipeline concluído com sucesso!"
+
+
+═══════════════════════════════════════════════════════════
+📋 TESTE 2: Com PVGIS (API Real - Funciona Agora!)
+═══════════════════════════════════════════════════════════
+
+python run_pipeline.py --use-real-data --lat -23.5505 --lon -46.6333 --horizon 7 --no-gui
+
+Coordenadas de exemplo:
+  São Paulo:    --lat -23.5505 --lon -46.6333
+  Rio de Janeiro: --lat -22.9068 --lon -43.1729
+  Brasília:     --lat -15.7942 --lon -47.8822
+
+O que esperar:
+  ✓ Mensagem "✓ Dados PVGIS obtidos via API real"
+  ✓ Dados reais de irradiação solar
+
+
+═══════════════════════════════════════════════════════════
+📋 TESTE 3: Com Interface Gráfica
+═══════════════════════════════════════════════════════════
+
+python run_pipeline.py --horizon 7
+
+O que esperar:
+  ✓ Pipeline executa
+  ✓ Janela gráfica abre
+  ✓ Abas: Dados, Gráficos, Resumo funcionando
+
+
+═══════════════════════════════════════════════════════════
+📋 VERIFICAR RESULTADOS
+═══════════════════════════════════════════════════════════
+
+1. Ver arquivos gerados:
+   ls results/          (Linux/Mac)
+   dir results\         (Windows)
+
+2. Ver conteúdo do CSV:
+   python -c "import pandas as pd; df = pd.read_csv('results/forecast_results.csv'); print(df.head())"
+
+3. Abrir gráficos:
+   - forecast_comparison.png
+   - surplus_deficit.png
+   - cumulative_profit.png
+
+
+═══════════════════════════════════════════════════════════
+🐛 SE DER ERRO
+═══════════════════════════════════════════════════════════
+
+1. Instalar dependências:
+   pip install -r requirements_minimal.txt
+
+2. Erro de módulo?
+   pip install pandas numpy matplotlib scikit-learn
+
+3. Interface não abre?
+   Use --no-gui para testar sem interface
+
+
+═══════════════════════════════════════════════════════════
+✅ COMANDO MAIS SIMPLES (COPIE E COLE):
+═══════════════════════════════════════════════════════════
+
+python run_pipeline.py --horizon 7 --no-gui
+

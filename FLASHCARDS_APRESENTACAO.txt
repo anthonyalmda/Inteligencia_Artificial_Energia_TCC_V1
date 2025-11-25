@@ -1,0 +1,142 @@
+================================================================================
+FLASHCARDS - RESUMO ULTRA-CONCISO PARA APRESENTAÇÃO TCC
+================================================================================
+
+🎯 OBJETIVO DO PROJETO
+--------------------------------------------------------------------------------
+Sistema de IA que prevê consumo e produção de energia para GD, calcula lucros 
+com PLD e decide automaticamente quando vender/comprar energia.
+
+📊 RESULTADO PRINCIPAL
+--------------------------------------------------------------------------------
+Melhor cenário: R$ 64,17 de lucro em 30 dias
+ROI: 294%
+Qualidade: MAE < 11 kWh, MAPE < 10%
+
+🏗️ ARQUITETURA (3 COMPONENTES)
+--------------------------------------------------------------------------------
+1. PREVISÃO → Modelos (Baseline, Prophet, XGBoost)
+2. ANÁLISE FINANCEIRA → Cálculo de lucros com PLD
+3. DECISÃO AUTOMATIZADA → Vender/Comprar/Neutro
+
+🔧 STACK TECNOLÓGICO
+--------------------------------------------------------------------------------
+Python, Pandas, NumPy, Scikit-learn, Prophet, Matplotlib
+APIs: PVGIS, CCEE, ONS, ANEEL, OpenWeatherMap
+
+📈 TOP 3 CENÁRIOS
+--------------------------------------------------------------------------------
+1. 04_horizon_30: R$ 64,17 (ROI 294%) ⭐ MELHOR
+2. 01_baseline: R$ 50,07 (ROI 5.952%)
+3. 03_horizon_7: R$ 28,64 (lucro médio maior)
+
+✅ QUALIDADE DAS PREVISÕES
+--------------------------------------------------------------------------------
+MAE Consumo: 10,88 kWh ✅ (Bom: < 10)
+MAPE Consumo: 9,89% ✅ (Bom: < 10%)
+MAE Produção: 11,46 kWh ✅ (Aceitável: 10-20)
+MAPE Produção: 8,97% ✅ (Bom: < 10%)
+
+💰 MÉTRICAS FINANCEIRAS (MELHOR CENÁRIO)
+--------------------------------------------------------------------------------
+Lucro Total: R$ 64,17
+Lucro Médio: R$ 2,14/dia
+ROI: 294,10%
+Excedente: 274,25 kWh
+Decisões: 76,7% vender, 23,3% comprar
+
+🎯 PONTOS FORTES
+--------------------------------------------------------------------------------
+1. Robustez: Validação automática, fallback inteligente
+2. Metodologia: Validação temporal, múltiplas métricas
+3. Integração: APIs reais (PVGIS, CCEE, ONS, ANEEL)
+4. Viabilidade: ROI positivo demonstrado
+5. Modularidade: Estrutura extensível
+
+⚠️ LIMITAÇÕES
+--------------------------------------------------------------------------------
+1. Modelos baseline: R² baixo, necessitam otimização
+2. APIs PVGIS: Problemas de escala detectados
+3. Validação: Apenas dados históricos
+4. Análise financeira: Simplificada
+
+🔮 TRABALHOS FUTUROS
+--------------------------------------------------------------------------------
+- Otimizar Prophet/XGBoost
+- Validar em dados reais
+- Expandir análise financeira
+- PLD horário
+
+💡 FRASE DE ABERTURA
+--------------------------------------------------------------------------------
+"Desenvolvi um sistema integrado de IA que prevê consumo e produção de energia 
+para GD, calcula lucros com PLD e decide automaticamente quando vender/comprar."
+
+📊 FRASE DE RESULTADO
+--------------------------------------------------------------------------------
+"O melhor cenário alcançou lucro de R$ 64,17 em 30 dias, com ROI de 294%, e 
+previsões de qualidade com erro médio absoluto inferior a 11 kWh."
+
+🎤 ROTEIRO (12 MIN)
+--------------------------------------------------------------------------------
+1. Introdução (2 min): Problema, solução, objetivo
+2. Metodologia (3 min): Arquitetura, modelos, validação
+3. Resultados (4 min): Melhor cenário, qualidade, 9 cenários
+4. Conclusões (2 min): Viabilidade, potencial, trabalhos futuros
+5. Demonstração (1 min): Executar pipeline
+
+❓ PERGUNTAS FREQUENTES
+--------------------------------------------------------------------------------
+Q: Por que alguns cenários têm lucro negativo?
+A: Problemas de escala PVGIS ou treino inadequado (muito curto/longo)
+
+Q: Modelos adequados para produção?
+A: Baseline para demonstração. Otimizar Prophet/XGBoost para produção.
+
+Q: Como lida com falhas de API?
+A: Fallback automático para dados simulados, validação detecta anomalias.
+
+Q: Precisão das previsões?
+A: MAE ~11 kWh, MAPE ~10%, dentro de faixas aceitáveis.
+
+Q: Considera PLD horário?
+A: Atualmente apenas diário. Horário é trabalho futuro.
+
+📁 ARQUIVOS IMPORTANTES
+--------------------------------------------------------------------------------
+- RESUMO_TECNICO_TCC.md (completo)
+- GUIA_RAPIDO_APRESENTACAO.md (resumo)
+- results/tcc_coleta_completa/04_horizon_30/ (melhor cenário)
+- results/tcc_coleta_completa/metricas_comparativas.xlsx
+
+🚀 COMANDO PARA DEMONSTRAÇÃO
+--------------------------------------------------------------------------------
+python run_pipeline.py --horizon 30 --region SE
+
+📊 MÉTRICAS PARA CITAR
+--------------------------------------------------------------------------------
+Financeiras: R$ 64,17 lucro, 294% ROI, R$ 2,14/dia médio
+Qualidade: MAE 10,88 kWh, MAPE 9,89%
+Decisões: 76,7% vender, 23,3% comprar
+
+🎓 CONCEITOS TÉCNICOS
+--------------------------------------------------------------------------------
+MAE: Erro médio absoluto. < 10 kWh = bom
+MAPE: Erro percentual. < 10% = bom
+R²: Qualidade do ajuste. > 0.7 = bom
+PLD: Preço de referência para energia no mercado livre
+ROI: Retorno sobre investimento (percentual)
+
+✅ CHECKLIST PRÉ-APRESENTAÇÃO
+--------------------------------------------------------------------------------
+[ ] Ler RESUMO_TECNICO_TCC.md
+[ ] Memorizar números principais
+[ ] Preparar gráficos para slides
+[ ] Testar execução do pipeline
+[ ] Preparar respostas FAQ
+[ ] Revisar estrutura de arquivos
+
+================================================================================
+BOA SORTE! 🚀
+================================================================================
+

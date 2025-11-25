@@ -1,0 +1,23 @@
+data:
+  region: "SE"
+  submercado: "SE"
+  inmet_station: "A701"
+  cache_dir: "data/raw"
+  # OpenWeatherMap API (obter em https://openweathermap.org/api)
+  openweather_api_key: null  # Substitua com sua chave para usar clima real
+  
+model:
+  horizon_days: 14
+  algo_consumption: "prophet"   # prophet|sarimax|xgboost
+  algo_production: "xgboost"
+  
+finance:
+  use_pld: true
+  sell_price_brl_per_kwh: 0.75
+  buy_price_brl_per_kwh: 0.90
+  cost_rate: 0.10
+  
+decisions:
+  buffer_kwh: 1.0
+  pld_premium_threshold_brl_mwh: 50
+

@@ -1,0 +1,48 @@
+REFERÊNCIAS
+
+AGÊNCIA NACIONAL DE ENERGIA ELÉTRICA. Dados abertos. Disponível em: https://dadosabertos.aneel.gov.br/. Acesso em: 30 out. 2024.
+
+CAMARA DE COMERCIALIZAÇÃO DE ENERGIA ELÉTRICA. Dados abertos. Disponível em: https://dadosabertos.ccee.org.br/. Acesso em: 30 out. 2024.
+
+CHEN, Tianqi; GUESTRIN, Carlos. XGBoost: a scalable tree boosting system. In: PROCEEDINGS OF THE 22ND ACM SIGKDD INTERNATIONAL CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING, 22., 2016, San Francisco. Anais [...]. New York: ACM, 2016. p. 785-794.
+
+FACEBOOK. Prophet: forecasting at scale. Disponível em: https://facebook.github.io/prophet/. Acesso em: 30 out. 2024.
+
+INSTITUTO NACIONAL DE METEOROLOGIA. Portal INMET. Disponível em: https://portal.inmet.gov.br/. Acesso em: 30 out. 2024.
+
+JOINT RESEARCH CENTRE. Photovoltaic Geographical Information System (PVGIS). Disponível em: https://joint-research-centre.ec.europa.eu/photovoltaic-geographical-information-system-pvgis/. Acesso em: 30 out. 2024.
+
+MCKINNEY, Wes. Data structures for statistical computing in Python. In: PROCEEDINGS OF THE 9TH PYTHON IN SCIENCE CONFERENCE, 9., 2010, Austin. Anais [...]. Austin: SciPy, 2010. p. 56-61.
+
+OPERADOR NACIONAL DO SISTEMA ELÉTRICO. Dados abertos. Disponível em: https://dados.ons.org.br/. Acesso em: 30 out. 2024.
+
+PEDREGOSA, Fabian et al. Scikit-learn: machine learning in Python. Journal of Machine Learning Research, Cambridge, v. 12, p. 2825-2830, 2011.
+
+TAYLOR, Sean J.; LETHAM, Benjamin. Forecasting at scale. The American Statistician, Alexandria, v. 72, n. 1, p. 37-45, 2018.
+
+VAN DER WALT, Stefan; COLBERT, S. Chris; VAROQUAUX, Gaël. The NumPy array: a structure for efficient numerical computation. Computing in Science & Engineering, Piscataway, v. 13, n. 2, p. 22-30, 2011.
+
+WASKOM, Michael L. seaborn: statistical data visualization. Journal of Open Source Software, [s.l.], v. 6, n. 60, p. 3021, 2021.
+
+HUNTER, John D. Matplotlib: a 2D graphics environment. Computing in Science & Engineering, Piscataway, v. 9, n. 3, p. 90-95, 2007.
+
+REBACK, Jeff et al. pandas-dev/pandas: Pandas 1.3.0. Zenodo, [s.l.], 2021. Disponível em: https://doi.org/10.5281/zenodo.3509134. Acesso em: 30 out. 2024.
+
+VAN ROSSUM, Guido; DRAKE, Fred L. Python 3 reference manual. Scotts Valley: CreateSpace, 2009.
+
+OLIPHANT, Travis E. A guide to NumPy. USA: Trelgol Publishing, 2006. v. 1.
+
+BRASIL. Lei n. 14.300, de 6 de janeiro de 2022. Estabelece o marco legal da microgeração e minigeração distribuída. Diário Oficial da União, Brasília, DF, 7 jan. 2022. Seção 1, p. 1.
+
+ANEEL. Resolução Normativa n. 482, de 17 de abril de 2012. Estabelece as condições gerais para o acesso de microgeração e minigeração distribuída aos sistemas de distribuição de energia elétrica. Diário Oficial da União, Brasília, DF, 18 abr. 2012. Seção 1, p. 1.
+
+CCEE. Preço de Liquidação das Diferenças (PLD). Disponível em: https://www.ccee.org.br/web/guest/preco-de-liquidacao-das-diferencas. Acesso em: 30 out. 2024.
+
+HASTIE, Trevor; TIBSHIRANI, Robert; FRIEDMAN, Jerome. The elements of statistical learning: data mining, inference, and prediction. 2. ed. New York: Springer, 2009.
+
+JAMES, Gareth et al. An introduction to statistical learning: with applications in R. New York: Springer, 2013.
+
+BOX, George E. P.; JENKINS, Gwilym M.; REINSEL, Gregory C. Time series analysis: forecasting and control. 4. ed. Hoboken: John Wiley & Sons, 2008.
+
+HYNDMAN, Rob J.; ATHANASOPOULOS, George. Forecasting: principles and practice. 3. ed. Melbourne: OTexts, 2021. Disponível em: https://otexts.com/fpp3/. Acesso em: 30 out. 2024.
+
