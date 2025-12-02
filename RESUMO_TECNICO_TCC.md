@@ -520,3 +520,5 @@ cd results/tcc_coleta_completa/04_horizon_30
 
 
 
+
+
